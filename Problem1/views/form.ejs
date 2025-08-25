@@ -1,0 +1,143 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fafafa; }
+        .container { max-width: 400px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 6px; box-shadow: 0 1px 4px #ccc; }
+        h2 { text-align: center; }
+        form div { margin-bottom: 12px; }
+        label { display: block; margin-bottom: 4px; }
+        input[type="text"], input[type="password"], input[type="email"] { width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 3px; }
+        input[type="file"] { margin-top: 4px; }
+        span[style*="color:red"] { font-size: 12px; margin-left: 4px; }
+        button { padding: 8px 16px; border: none; background: #007bff; color: #fff; border-radius: 3px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration Form</h2>
+        <form action="/register" method="POST" enctype="multipart/form-data">
+            <div>
+                <label>Username:</label>
+                <input type="text" name="username" value="<%= old.username || '' %>">
+                <span style="color:red"><%= errors.username || '' %></span>
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" name="password">
+                <span style="color:red"><%= errors.password || '' %></span>
+            </div>
+            <div>
+                <label>Confirm Password:</label>
+                <input type="password" name="confirmPassword">
+                <span style="color:red"><%= errors.confirmPassword || '' %></span>
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="text" name="email" value="<%= old.email || '' %>">
+                <span style="color:red"><%= errors.email || '' %></span>
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="Male" <%= old.gender === 'Male' ? 'checked' : '' %>> Male
+                <input type="radio" name="gender" value="Female" <%= old.gender === 'Female' ? 'checked' : '' %>> Female
+                <input type="radio" name="gender" value="Other" <%= old.gender === 'Other' ? 'checked' : '' %>> Other
+                <span style="color:red"><%= errors.gender || '' %></span>
+            </div>
+            <div>
+                <label>Hobbies:</label>
+                <input type="checkbox" name="hobbies" value="Reading" <%= old.hobbies && old.hobbies.includes('Reading') ? 'checked' : '' %>> Reading
+                <input type="checkbox" name="hobbies" value="Sports" <%= old.hobbies && old.hobbies.includes('Sports') ? 'checked' : '' %>> Sports
+                <input type="checkbox" name="hobbies" value="Music" <%= old.hobbies && old.hobbies.includes('Music') ? 'checked' : '' %>> Music
+                <span style="color:red"><%= errors.hobbies || '' %></span>
+            </div>
+            <div>
+                <label>Profile Pic:</label>
+                <input type="file" name="profilePic" accept="image/*">
+                <span style="color:red"><%= errors.profilePic || '' %></span>
+            </div>
+            <div>
+                <label>Other Pics:</label>
+                <input type="file" name="otherPics" accept="image/*" multiple>
+                <span style="color:red"><%= errors.otherPics || '' %></span>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fafafa; }
+        .container { max-width: 400px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 6px; box-shadow: 0 1px 4px #ccc; }
+        h2 { text-align: center; }
+        form div { margin-bottom: 12px; }
+        label { display: block; margin-bottom: 4px; }
+        input[type="text"], input[type="password"], input[type="email"] { width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 3px; }
+        input[type="file"] { margin-top: 4px; }
+        span[style*="color:red"] { font-size: 12px; margin-left: 4px; }
+        button { padding: 8px 16px; border: none; background: #007bff; color: #fff; border-radius: 3px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration Form</h2>
+        <form action="/register" method="POST" enctype="multipart/form-data">
+            <div>
+                <label>Username:</label>
+                <input type="text" name="username" value="<%= old.username || '' %>">
+                <span style="color:red"><%= errors.username || '' %></span>
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" name="password">
+                <span style="color:red"><%= errors.password || '' %></span>
+            </div>
+            <div>
+                <label>Confirm Password:</label>
+                <input type="password" name="confirmPassword">
+                <span style="color:red"><%= errors.confirmPassword || '' %></span>
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="text" name="email" value="<%= old.email || '' %>">
+                <span style="color:red"><%= errors.email || '' %></span>
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="Male" <%= old.gender === 'Male' ? 'checked' : '' %>> Male
+                <input type="radio" name="gender" value="Female" <%= old.gender === 'Female' ? 'checked' : '' %>> Female
+                <input type="radio" name="gender" value="Other" <%= old.gender === 'Other' ? 'checked' : '' %>> Other
+                <span style="color:red"><%= errors.gender || '' %></span>
+            </div>
+            <div>
+                <label>Hobbies:</label>
+                <input type="checkbox" name="hobbies" value="Reading" <%= old.hobbies && old.hobbies.includes('Reading') ? 'checked' : '' %>> Reading
+                <input type="checkbox" name="hobbies" value="Sports" <%= old.hobbies && old.hobbies.includes('Sports') ? 'checked' : '' %>> Sports
+                <input type="checkbox" name="hobbies" value="Music" <%= old.hobbies && old.hobbies.includes('Music') ? 'checked' : '' %>> Music
+                <span style="color:red"><%= errors.hobbies || '' %></span>
+            </div>
+            <div>
+                <label>Profile Pic:</label>
+                <input type="file" name="profilePic" accept="image/*">
+                <span style="color:red"><%= errors.profilePic || '' %></span>
+            </div>
+            <div>
+                <label>Other Pics:</label>
+                <input type="file" name="otherPics" accept="image/*" multiple>
+                <span style="color:red"><%= errors.otherPics || '' %></span>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
+>>>>>>> 7c551cd (Problem 3 - Express login with Redis session)

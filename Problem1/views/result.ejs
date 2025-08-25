@@ -1,0 +1,87 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Result</title>
+</head>
+<body>
+    <h2>Registration Successful!</h2>
+    <h3>Welcome, <%= data.username %>!</h3>
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Username</th>
+            <td><%= data.username %></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><%= data.email %></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td><%= data.gender %></td>
+        </tr>
+        <tr>
+            <th>Hobbies</th>
+            <td><%= data.hobbies.join(', ') %></td>
+        </tr>
+        <tr>
+            <th>Profile Pic</th>
+            <td>
+                <img src="/uploads/<%= data.profilePic %>" width="100">
+            </td>
+        </tr>
+        <tr>
+            <th>Other Pics</th>
+            <td>
+                <% data.otherPics.forEach(function(pic) { %>
+                    <img src="/uploads/<%= pic %>" width="100" style="margin:5px;">
+                <% }) %>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Result</title>
+</head>
+<body>
+    <h2>Registration Successful!</h2>
+    <h3>Welcome, <%= data.username %>!</h3>
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Username</th>
+            <td><%= data.username %></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><%= data.email %></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td><%= data.gender %></td>
+        </tr>
+        <tr>
+            <th>Hobbies</th>
+            <td><%= data.hobbies.join(', ') %></td>
+        </tr>
+        <tr>
+            <th>Profile Pic</th>
+            <td>
+                <img src="/uploads/<%= data.profilePic %>" width="100">
+            </td>
+        </tr>
+        <tr>
+            <th>Other Pics</th>
+            <td>
+                <% data.otherPics.forEach(function(pic) { %>
+                    <img src="/uploads/<%= pic %>" width="100" style="margin:5px;">
+                <% }) %>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+>>>>>>> 7c551cd (Problem 3 - Express login with Redis session)

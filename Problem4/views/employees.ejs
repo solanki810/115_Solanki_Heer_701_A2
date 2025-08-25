@@ -1,0 +1,22 @@
+<h2>Employees</h2>
+<a href="/employees/new">Add Employee</a>
+<a href="/logout" style="margin-left:20px">Logout</a>
+
+<table border="1">
+    <tr><th>EmpID</th><th>Name</th><th>Email</th><th>Salary</th><th>Actions</th></tr>
+    <% employees.forEach(emp => { %>
+    <tr>
+        <td><%= emp.empid %></td>
+        <td><%= emp.name %></td>
+        <td><%= emp.email %></td>
+        <td><%= emp.salary %></td>
+        <td>
+            <a href="/employees/<%= emp._id %>/edit">Edit</a> |
+            <form method="POST" action="/employees/<%= emp._id %>/delete" style="display:inline">
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+    </tr>
+    <% }) %>
+</table>
+

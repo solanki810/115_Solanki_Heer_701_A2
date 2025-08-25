@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; background: #f8f9fa; }
+.card { border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+h3, h4 { font-weight: 600; }
+button { border-radius: 8px; transition: 0.2s ease-in-out; }
+button:hover { opacity: 0.9; transform: scale(1.02); }
+.navbar { border-radius: 0 0 12px 12px; }
+#leaveList li { margin-bottom: 8px; padding: 10px; border-radius: 8px; background: #fff; }

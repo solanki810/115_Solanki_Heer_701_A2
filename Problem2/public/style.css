@@ -1,0 +1,115 @@
+<<<<<<< HEAD
+body {
+  background: #f0f4f8;
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: 350px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+input[type="text"], input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background: #0056b3;
+}
+.error {
+  color: #d8000c;
+  background: #ffbaba;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.logout {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
+  background: #dc3545;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.logout:hover {
+  background: #a71d2a;
+}
+=======
+body {
+  background: #f0f4f8;
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: 350px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+input[type="text"], input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background: #0056b3;
+}
+.error {
+  color: #d8000c;
+  background: #ffbaba;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.logout {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
+  background: #dc3545;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.logout:hover {
+  background: #a71d2a;
+}
+>>>>>>> 7c551cd (Problem 3 - Express login with Redis session)
